@@ -14,8 +14,6 @@ La aplicación debe:
  4. Utilizar una base de datos en memoria hsqldb.
  5. Se debe poder _deployar_ en Jboss/Wildfly.
 
-Los endpoints mencionados se pueden encontrar en [esta colección de Postman](https://www.getpostman.com/collections/2868fce4ef0f2cb06de0).
-
 ## Ejecutar la aplicación
 
 Se puede ejecutar la aplicación de dos formas
@@ -38,6 +36,12 @@ Se recomienda esta opción ya que en un solo paso y de forma sencilla se puede l
 Para esto, se debe simplemente correr el comando `docker-compose up`, lo que iniciará el build de una imagen con todo lo necesario para correr la aplicación dentro del servidor.
 
 #### En este paso, si todo salió según lo esperado, la aplicación ya debería estar accesible y se puede comenzar a probar vía Postman.
+
+## Pruebas con Postman
+
+[Esta colección de Postman](https://www.getpostman.com/collections/2868fce4ef0f2cb06de0) contiene los endpoints antes mencionados a modo de referencia/ejemplo.
+
+> Nota importante: las URLs en esta colección incluyen tres parámetros: `host`, `port` y `appContext`. Los dos primeros deben ser  `localhost` y `8080` respectivamente. El valor que debe ajustarse es `appContext`: si la aplicación se lanzó de forma manual debe quedar vacío, y si se lanzó vía docker debe valer `mavha-challenge/` (importante conservar la barra final). Esto es porque Jboss/Wildfly _deploya_ el war en esa ruta.
 
 ## Autor
 
