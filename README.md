@@ -6,8 +6,8 @@ Se pide implementar una solución que permita guardar y listar personas que tien
 
 La aplicación debe:
 
- 1. Proveer endpoints para
-  1.1 Listar personas, usando filtros opcionales por DNI, nombre y edad
+ 1. Proveer endpoints para \
+  1.1 Listar personas, usando filtros opcionales por DNI, nombre y edad \
   1.2 Dar de alta personas
  2. Contar con tests unitarios para el alta y el listado de personas.
  3. Usar maven y basarse en el Spring framework.
